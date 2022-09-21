@@ -1,0 +1,92 @@
+body{
+    margin-top: 13%;
+    margin-left: 1%;
+}
+.box{
+    display: flex;
+}
+.box span{
+    margin-left: 5%;
+    font-size: 23px;
+}
+.box img{
+    margin: -5% 0 -40% -10%;
+}
+.box p{
+    margin-left: -15%;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.calender{
+    display: flex;
+}
+.calender .month {
+    margin: 3%;
+    color: rgba(147, 176, 200, 1);
+}
+.calender .month span{
+    color: rgba(89, 116, 138, 1);
+    margin-left: 24%;
+}
+
+.box1{
+    background-color: #0091D6;
+    border-radius: 30px;
+    padding: 5% 5% 5% 12%;
+    margin-top: 3%;
+    margin-right: 7%;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 20px rgba(231, 244, 255, 0.5);
+}
+.box1 .square{
+    background-color: white;
+    padding: 6%;
+    margin: -10% -7.5% -7.5% 89%;
+    border-radius: 25px 2px;
+}
+.box1 p{
+    margin-bottom: 2%;
+}
+.box1 span{
+    z-index: 1;
+    color: #0091D6;
+    font-size: 24px;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.box2, .box3, .box4{
+    display: flex;
+    margin-top: 4%;
+    margin-right: 9%;
+    border-radius:17px ;
+    padding: 1%;
+}
+.box2{
+    background-color: #FFCBD2;
+    color: #E61D35;
+    margin-top: 14%;
+}
+.box3{
+    background-color: #FFD0BA;
+    color: #ED6323;
+}
+.box4{
+    background-color: #FFD7FA;
+    color: #8D2880;
+}
+.icon{
+    background-color: white;
+    border-radius: 100px;
+    padding: 12px 18px;
+    margin: 2% 2% 2% 6%;
+}
+.text{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 4%;
+    cursor: pointer;
+}

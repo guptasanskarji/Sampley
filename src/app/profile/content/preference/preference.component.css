@@ -1,0 +1,22 @@
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+}
+.form-label{
+    color: grey;
+    font-size: 17px;
+}
+select, option{
+    color: black;
+    width: 180%;
+    padding: 2%;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: rgba(231, 244, 255, 0.5);
+}
+
+.button{
+    margin-right: -50%;
+}

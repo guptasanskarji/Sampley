@@ -1,0 +1,26 @@
+<body>
+    <div class="head">
+        <span class="fa fa-magnifying-glass"></span><input type="search" id="search_bar" placeholder="Type to search">
+        <h3>Edit Profile</h3>
+    </div>
+    <div class="content1">
+        <div class="profile">
+            <img src="../../../assets/Images/picture.svg" alt="" width="20%" height="20%">
+            <div class="box1">
+                <h3>Edgar Yaan</h3>
+                <h5>Asian Paints</h5>
+                <p>Manager</p>
+                <p>edgaryaan@asianpaints.com</p>
+                <span class="fa-regular fa-map"></span>&nbsp;&nbsp;&nbsp;Kochi, kerala
+            </div>
+        </div>
+        <div class="taskbar">
+            <button (click)="open()" style="border: none; background-color:white;">personal Information </button> 
+            <button (click)="open1()" style="border: none; background-color:white;">Company Information</button>
+            <button style="background-color: #2F439B; color: white; border-radius: 10px; padding:11px 19px;margin: 3%; border: none; margin: 2px 0;" (click)="open2()">Preference Information</button>
+        </div>
+        <div class="footer">
+            <app-preference></app-preference>
+        </div>
+    </div>
+</body>

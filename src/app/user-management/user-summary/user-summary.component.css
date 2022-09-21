@@ -1,0 +1,31 @@
+body{
+    margin-top: 13%;
+    margin-left: 1%;
+}
+.box{
+    display: flex;
+}
+.box span{
+    margin-left: 5%;
+    font-size: 23px;
+}
+.box img{
+    margin: -5% 0 -40% -10%;
+}
+.box p{
+    margin-left: -15%;
+}
+.heading{
+    margin: 5% 9% 1% 7%;
+}
+hr{
+    margin-right: 5%;
+}
+.accounts .mail{
+    display: flex;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+.accounts .mail .data{
+    margin-left: 9%;
+}

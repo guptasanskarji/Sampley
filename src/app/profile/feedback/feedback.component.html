@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<div class="container">
+    <div class="box">
+        <span class="fa-regular fa-bell"></span>
+        <img src="./../../../assets/Images/profile.svg" alt="">
+        <p>edgar yaan <br> developer.</p>
+    </div>
+    <h3>Invite coworkers</h3> 
+    <form >
+        <div class="form-group">
+            <label for="brandname" class="form-label">Brand Name </label>
+            <input type="text" class="form-control" formControlName="brandname" id="brandname" aria-describedby="brandname" placeholder="Enter Brand name">
+        </div>
+        <div class="form-group">
+            <label for="personname" class="form-label">Contact person name </label>
+            <input type="text" class="form-control" formControlName="personname" id="personname" aria-describedby="personname" placeholder="Enter contact person name">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email </label>
+            <input type="email" class="form-control" formControlName="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email id">
+        </div>
+        <div class="form-group">
+            <label for="designation" class="form-label">Designation </label>
+            <input type="text" class="form-control" formControlName="designation" id="designation" aria-describedby="designation" placeholder="Enter Designation">
+        </div>
+        <div class="form-group">
+            <label for="message" class="form-label">Message </label>
+            <textarea type="text" class="form-control" formControlName="message" id="message" aria-describedby="message" placeholder="Enter your message" rows="3" cols="8"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Send Invite</button>
+    </form>
+</div>

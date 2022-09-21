@@ -1,0 +1,25 @@
+.header{
+    margin: 10% 1% 8% 1%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 50%;
+}
+.container span{
+    margin-right: 11%;
+}
+.container img{
+    margin-right: 7%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 108%;
+    margin: 6% 0;
+}
+select{
+    margin-top: -13%;
+    z-index: -1;
+}
