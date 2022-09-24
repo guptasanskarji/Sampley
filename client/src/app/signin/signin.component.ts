@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
 })
 export class SigninComponent implements OnInit {
 
-  public loginForm! : FormGroup
+  public loginForm! : FormGroup;
+
   constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
@@ -20,22 +21,22 @@ export class SigninComponent implements OnInit {
       password:['']
     })
   }
-  login(){
-    this.http.get<any>('http://localhost:3000/signupUsers')
-    .subscribe(res=>{
-      const user = res.find((a:any)=>{
-        return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
-      });
-      if(user){
-        alert("Login Success!!");
-        this.loginForm.reset();
-        this.router.navigate(['profile'])
-      }else {
-        alert("User not found!!")
-      }
-    },err=>{
-      alert("Something went wrong!!");
-    })
-  }
 
+  login(){
+    if (this.loginForm.value.email === "" ||this.loginForm.value.email === null || this.loginForm.value.password === "" ||this.loginForm.value.password === null ) {
+     alert("Fields cannot be empty")
+     return
+    }
+
+    this.http.post<any>('http://localhost:3000/api/user/login', this.loginForm.value).
+    subscribe((res:any)=>{      
+     alert("Logged In")
+     this.router.navigate(['dashboard'])
+    }, (err)=>{
+      console.log(err);
+      alert(err.error)
+    }
+    )
+    this.loginForm.reset();
+  }
 }
