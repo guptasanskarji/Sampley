@@ -1,22 +1,76 @@
+.container{
+    padding-right: 8%;
+    margin: 0% 1%;
+}
 .form{
     display: flex;
     flex-wrap: wrap;
-    width: 20%;
+}
+.form-group{
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 8%;
 }
 .form-label{
     color: grey;
     font-size: 17px;
+    margin-top: 8%;
 }
 select, option{
     color: black;
-    width: 180%;
-    padding: 2%;
+    width: 120%;
+    padding: 4%;
     font-size: 17px;
-    border: 1px solid grey;
+    border: none;
     border-radius: 8px;
     background-color: rgba(231, 244, 255, 0.5);
+
 }
 
-.button{
-    margin-right: -50%;
+.keyboard{
+    padding: 10%;
+    border-radius: 20px;
+    margin-right: -158%;
+    margin-bottom: 6%;
+    border: none;
+    background-color: #F6F9FD;
+}
+
+.block{
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.block p{
+    margin: 1% 0% 1% 1%;
+    background-color: rgba(246, 249, 253, 1);
+    padding: 1% 1.65%;
+    color: rgba(94, 107, 124, 1);
+    border-radius: 5px;
+}
+.block span{
+    cursor: pointer;
+}
+
+.button button{
+    padding: 0.1% 1%;
+    margin: 0.5% 0.35%;
+    font-size: 17px;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+.button button:hover{
+    background-color: rgba(47, 67, 155, 1);
+    color: white;
+}
+
+.company{
+    display: flex;
+}
+.company img{
+    margin-right: 5.5%;
+    width: 15%;
+    height: 15%;
 }
