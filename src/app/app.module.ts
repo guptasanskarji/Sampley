@@ -21,6 +21,11 @@ import { UserManagementComponent } from './user-management/user-management.compo
 import { UserSummaryComponent } from './user-management/user-summary/user-summary.component';
 import { UserContentComponent } from './user-management/user-content/user-content.component';
 import { UserSidebarComponent } from './user-management/user-sidebar/user-sidebar.component';
+import { UserdashboardComponent } from './userdashboard/userdashboard.component';
+import { Content2Component } from './userdashboard/content2/content2.component';
+import { InvitationsComponent } from './userdashboard/invitations/invitations.component';
+import { BrandsPageComponent } from './brands-page/brands-page.component';
+import { BrandContentComponent } from './brands-page/brand-content/brand-content.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +44,12 @@ import { UserSidebarComponent } from './user-management/user-sidebar/user-sideba
     UserManagementComponent,
     UserSummaryComponent,
     UserContentComponent,
-    UserSidebarComponent
+    UserSidebarComponent,
+    UserdashboardComponent,
+    Content2Component,
+    InvitationsComponent,
+    BrandsPageComponent,
+    BrandContentComponent
   ],
   imports: [
     BrowserModule,
