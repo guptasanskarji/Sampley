@@ -12,7 +12,7 @@ import { UserdashboardComponent } from './userdashboard/userdashboard.component'
 
 const routes: Routes = [
   {path:'', redirectTo:'signin', pathMatch:'full'},
-  {path:'signin', component:SigninComponent},
+  {path:'signin', component:SigninComponent, },
   {path:'profile', component:ProfileComponent, children:[
     {path:'personal', component:PersonalComponent},
     {path:'company', component:CompanyComponent},
