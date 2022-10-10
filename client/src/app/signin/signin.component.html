@@ -1,34 +1,70 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+/>
 <body>
-<div class="header">
-    <img src="./../../assets/Images/Logo (1).svg" alt="">
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-8 box">
-            <h1>Sign In</h1>
-            <span>Please fill your detail to access your account.</span> <br><br>
-            <form [formGroup]="loginForm" (ngSubmit)="login()">
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label">Email </label>
-                  <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="edgar.yaa@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                 <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="* * * * * * * * * *"> 
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                  <a routerLink="/forgot-password">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
-                <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
-              </form>
-        </div>
-        <div class="col-4 img">
-            <img src="./../../assets/Images/SideImage.svg.jpg" alt="" height="100%" width="120%">
-        </div>
+  <div class="header p-4 px-0 px-md-4">
+    <img
+      src="./../../assets/Images/Logo (1).svg"
+      alt="sampley"
+      class="img-fluid"
+    />
+  </div>
+  <div
+    class="container d-flex align-items-center justify-content-center mt-0 mt-md-5 px-0"
+  >
+    <div class="row w-100">
+      <div class="col-12 col-md-7 p-4 px-md-5">
+        <span>Please fill your detail to access your account.</span>
+        <h2 class="mt-2">Sign In</h2>
+        <form
+          [formGroup]="loginForm"
+          (ngSubmit)="login()"
+          class="main-form mt-4 mt-md-5"
+        >
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label">Email </label>
+            <input
+              type="email"
+              class="form-control"
+              formControlName="email"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="edgar.yaa@example.com"
+            />
+          </div>
+          <div class="form-group mt-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              formControlName="password"
+              id="exampleInputPassword1"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="form-group form-check mt-3">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <div class="d-flex justify-content-between">
+              <label class="form-check-label" for="exampleCheck1"
+                >Remember me</label
+              >
+              <a routerLink="/forgot-password">Forgot Password?</a>
+            </div>
+          </div>
+          <button type="submit" class="w-100 mt-4">Sign in</button>
+          <p class="sigup-link mt-3">
+            Don't have an account? <a routerLink="/signup">Sign up</a>
+          </p>
+        </form>
+      </div>
+      <div class="col-5 img-div p-0 d-none d-md-block"></div>
     </div>
-</div>
+  </div>
 </body>
