@@ -1,0 +1,119 @@
+body{
+    padding: 3% 3%;
+    background-color: rgba(231, 244, 255, 0.5);
+    border-radius: 40px;
+    margin-left: 4% ;
+}
+.head{
+    display: flex; 
+}
+.head span{
+    margin-left: 29.5%;
+    margin-top: 0.7%;
+    z-index: 1;
+    color: gray;
+    position: absolute;
+}
+.head input{
+    margin-left: 26%;
+    border: none;
+    width: 37%;
+    padding-left: 46px;
+}
+
+.container{
+    background-color: white;
+    margin: 3% 0;
+    border-radius: 5%;
+    padding:0 3% 1% 0;
+}
+.content1{
+    display: flex;
+    width: 100%;
+    margin-left: 4%;
+}
+.content{
+    display: flex;
+    background-color: white;
+    color: rgba(47, 67, 155, 1);
+    border-radius: 13px;
+    box-shadow: 0 30px 30px rgba(190, 225, 253, 0.5);
+    padding: 2% 10% 0 4%;
+    font-size: 17px; 
+    margin: 4% 1.5%;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+.content:hover{
+    border: 2px solid rgba(47, 67, 155, 1);
+}
+
+.content2{
+    margin-left: 3%;
+}
+.content3{
+    margin: 4% 1%;
+}
+.content3 .box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content3 .box .block{
+    display: flex;
+    border: 0.25px solid rgb(166, 174, 209);
+    border-radius: 10px;
+    width: 48%;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 15px;
+}
+
+.content3 .box .block .text{
+    padding-left: 4%;
+    margin-top: 2%;
+}
+
+.content3 .box .block .text .icon span{
+    font-size: 13px;
+    color: rgba(171, 186, 202, 1);
+    padding-left: 4%;
+}
+
+.content4{
+    margin: 3% 1%;
+}
+.content4 .product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content4 .product .paints{
+    border: 1px solid rgb(182, 189, 222);
+    border-radius: 10px ;
+    width: 24%;
+    padding: 2% 0.5% 1% 2%;
+    font-size: 15px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.content4 .product .paints img{
+    margin-left: 17%;
+    margin-bottom: 10%
+}
+.content4 .product .paints h6{
+    color: rgba(47, 67, 155, 1);
+}
+
+.button button{
+    border: 2px solid #D0D5DD;
+    border-radius: 8px;
+    margin-left: 1.5%;
+    padding: 0.5% 2%;
+    margin-top: 2%;
+    color: rgba(47, 67, 155, 1);
+    background-color: white;
+}
+
+.button button:hover{
+    border: 2px solid rgba(47, 67, 155, 1);
+}

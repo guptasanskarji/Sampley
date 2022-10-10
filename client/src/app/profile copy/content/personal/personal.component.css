@@ -1,0 +1,28 @@
+.container{
+    padding-right: 5%;
+    margin: 0% 1%;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-group{
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 8%;
+}
+.form-label{
+    color: grey;
+    font-size: 17px;
+    margin-top: 8%;
+}
+select, option, input, textarea{
+    color: black;
+    width: 120%;
+    padding: 4%;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(231, 244, 255, 0.5);
+
+}
