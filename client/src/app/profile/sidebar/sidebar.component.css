@@ -1,25 +1,34 @@
-.header{
+.sidebar {
+    position: fixed;
+}
+
+.header {
     margin: 10% 1% 8% 1%;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     margin-left: 15%;
     margin-right: 50%;
 }
-.container span{
+
+.container span {
     margin-right: 11%;
 }
-.container img{
+
+.container img {
     margin-right: 7%;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     font-size: 108%;
     margin: 6% 0;
 }
-select{
+
+select {
     margin-top: -13%;
     z-index: -1;
 }

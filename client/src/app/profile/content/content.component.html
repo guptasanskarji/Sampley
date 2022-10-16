@@ -1,28 +1,43 @@
 <body>
-    <div class="head">
-        <span class="fa fa-magnifying-glass"></span><input type="search" id="search_bar" placeholder="Type to search">
-        <h3>Edit Profile</h3>
+  <div class="head py-3">
+    <h5>Edit Profile</h5>
+    <div class="searchbar">
+      <i class="fa fa-magnifying-glass pe-2"></i>
+      <input id="search_bar" placeholder="Type to search" />
     </div>
-    <div class="content1">
-        <div class="profile">
-            <img src="../../../assets/Images/picture.svg" alt="" width="20%" height="20%">
-            <div class="box1">
-                <h3>Edgar Yaan</h3>
-                <h5>Asian Paints</h5>
-                <p>Manager</p>
-                <p>edgaryaan@asianpaints.com</p>
-                <span class="fa-regular fa-map"></span>&nbsp;&nbsp;&nbsp;Kochi, kerala
-            </div>
-        </div>
-        <div class="taskbar">
-            <button (click)="open()" style="border: none;">personal Information </button> 
-            <button (click)="open1()" style="border: none;">Company Information</button>
-            <button (click)="open2()" style="border: none;">Preference Information</button>
-        </div>
-        <div class="footer">
-            <app-preference></app-preference>
-            <!-- <app-personal></app-personal> -->
-            <!-- <app-company></app-company> -->
-        </div>
+  </div>
+  <div class="content1 p-4">
+    <div class="profile d-flex align-items-center flex-column flex-md-row">
+      <img
+        src="../../../assets/Images/picture.svg"
+        alt=""
+        width="30%"
+        height="30%"
+        class="img-fluid"
+      />
+      <div class="box1 mt-4 text-center text-md-start ms-0 ms-md-5">
+        <h3>Edgar Yaan</h3>
+        <h5>Asian Paints</h5>
+        <p>Manager</p>
+        <p>edgaryaan@asianpaints.com</p>
+        <span class="fa-regular fa-map"></span>&nbsp;&nbsp;&nbsp;Kochi, kerala
+      </div>
     </div>
+    <div class="taskbar d-flex flex-column flex-md-row">
+      <button (click)="open()" style="border: none">
+        personal Information
+      </button>
+      <button (click)="open1()" style="border: none">
+        Company Information
+      </button>
+      <button (click)="open2()" style="border: none">
+        Preference Information
+      </button>
+    </div>
+    <div class="footer">
+      <app-preference></app-preference>
+      <!-- <app-personal></app-personal> -->
+      <!-- <app-company></app-company> -->
+    </div>
+  </div>
 </body>

@@ -1,22 +1,27 @@
-.container{
+.container {
     padding-right: 8%;
     margin: 0% 1%;
 }
-.form{
+
+.form {
     display: flex;
     flex-wrap: wrap;
 }
-.form-group{
+
+.form-group {
     width: 40%;
     margin-left: 2%;
     margin-right: 8%;
 }
-.form-label{
+
+.form-label {
     color: grey;
     font-size: 17px;
     margin-top: 8%;
 }
-select, option{
+
+select,
+option {
     color: black;
     width: 120%;
     padding: 4%;
@@ -27,7 +32,7 @@ select, option{
 
 }
 
-.keyboard{
+.keyboard {
     padding: 10%;
     border-radius: 20px;
     margin-right: -158%;
@@ -36,41 +41,72 @@ select, option{
     background-color: #F6F9FD;
 }
 
-.block{
+.block {
     background-color: white;
     display: flex;
     border-radius: 10px;
     margin-bottom: 3%;
 }
-.block p{
+
+.block p {
     margin: 1% 0% 1% 1%;
     background-color: rgba(246, 249, 253, 1);
     padding: 1% 1.65%;
     color: rgba(94, 107, 124, 1);
     border-radius: 5px;
 }
-.block span{
+
+.block span {
     cursor: pointer;
 }
 
-.button button{
+.button button {
     padding: 0.1% 1%;
-    margin: 0.5% 0.35%;
-    font-size: 17px;
+    margin: 0.2rem;
+    font-size: 15px;
     border: none;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 5px;
+    width: 30px;
+    aspect-ratio: 1;
+    text-align: center;
 }
-.button button:hover{
+
+.button button:hover {
     background-color: rgba(47, 67, 155, 1);
     color: white;
 }
 
-.company{
+.company {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.company img{
-    margin-right: 5.5%;
-    width: 15%;
-    height: 15%;
+
+.company img {
+    margin: 1rem;
+    /* width: 15%;
+    height: 15%; */
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+.bottom-btns button {
+    border: 1px solid rgba(47, 67, 155, 1);
+    padding: 2.6% 7%;
+    font-size: 90%;
+}
+
+@media only screen and (max-width:800px) {
+
+
+    .profile-form .form-group,
+    .profile-form .form-group select {
+        width: 100%;
+    }
+
+    .keyboard {
+        margin-right: 0;
+    }
 }

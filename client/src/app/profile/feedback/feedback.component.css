@@ -1,37 +1,45 @@
-.container{
-    margin: 10% 19% 4% 0 ;
+.container {
+    margin: 10% 19% 4% 0;
 }
-h3{
+
+h3 {
     font-weight: bold;
     margin-top: 2%;
 }
-.box{
+
+.box {
     display: flex;
 }
-.box span{
+
+.box span {
     margin-left: 5%;
     font-size: 23px;
 }
-.box img{
+
+.box img {
     margin: -3% 0% -45% -8%;
 }
-.box p{
+
+.box p {
     margin-left: -20%;
     margin-right: 10%;
 }
-.form-label{
+
+.form-label {
     font-size: 110%;
     padding-top: 3%;
     color: black;
 }
-.form-control{
+
+.form-control {
     background-color: rgba(231, 244, 255, 0.5);
     width: 100%;
     padding: 2.5%;
     font-size: 90%;
     margin-bottom: 1%;
 }
-button{
+
+button {
     background-color: #2F439B;
     padding: 2%;
     width: 100%;
